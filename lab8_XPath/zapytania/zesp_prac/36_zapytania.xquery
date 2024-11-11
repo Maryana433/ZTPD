@@ -1,0 +1,2 @@
+let $zespolID := doc('file:///C:/XPath-XQuery/zesp_prac.xml')/ZESPOLY/ROW/PRACOWNICY/ROW[NAZWISKO="BRZEZINSKI"]/ID_ZESP
+return sum(doc('file:///C:/XPath-XQuery/zesp_prac.xml')/ZESPOLY/ROW[ID_ZESP=$zespolID]/PRACOWNICY/ROW/PLACA_POD)
